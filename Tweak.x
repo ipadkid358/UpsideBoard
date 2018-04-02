@@ -3,7 +3,7 @@
 %hook UIViewController
 
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations {
-    return (%orig | UIInterfaceOrientationMaskPortraitUpsideDown);
+    return (%orig | UIInterfaceOrientationMaskAll);
 }
 
 %end
